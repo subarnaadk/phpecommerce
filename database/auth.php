@@ -5,8 +5,7 @@ session_start();
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $username= $_POST['uname'];
     $password= $_POST['psw'];
-
-    $sql = "SELECT id FROM sign_up WHERE username= '$username' AND password= '$password'";
+    $sql = "SELECT id FROM login WHERE username= '$username' AND password= '$password'";
      $result = mysqli_query($conn,$sql);
      $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
      
@@ -15,6 +14,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
      if($count==1){
       $_SESSION["username"] = $username;
         header("location:../product.php");
+     }
+     else{
+      echo "problem to db";
      }
 
 }

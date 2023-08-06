@@ -10,9 +10,8 @@
             color:red;
         }
     </style>
-    
-        <link rel="stylesheet"
-		href="css/login.css">
+    <link rel="stylesheet"
+		href="css/product.css">
 
-
+        
 </head>

@@ -7,7 +7,7 @@ if(!isset($_SESSION['username']))
 ?>
 
 <?php
- include 'includes/header.php';
+ include 'includes/product_header.php';
  ?>
 <body>
 
@@ -103,11 +103,13 @@ if(!isset($_SESSION['username']))
 					</div>
 
 					<div class="nav-option logout">
+                    <a href="logout.php">
 						<img src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
 							class="nav-img"
 							alt="logout">
 						<h3>Logout</h3>
+						</a>
 					</div>
 
 				</div>
