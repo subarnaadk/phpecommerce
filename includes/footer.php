@@ -1,6 +1,6 @@
 <footer>
     <!-- This is Footer -->
 </footer>
-<script src="css/product.js"></script>
+<script src="/bca3rd/js/product.js"></script>
 </body>
 </html>

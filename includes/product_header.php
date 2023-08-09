@@ -11,7 +11,7 @@
         }
     </style>
     <link rel="stylesheet"
-		href="css/product.css">
+		href="/bca3rd/css/product.css">
 
         
 </head>
