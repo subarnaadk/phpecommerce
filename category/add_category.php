@@ -179,11 +179,34 @@ if(!isset($_SESSION['username']))
 				<div class="report-header">
 					<h1 class="recent-Article">Add Category</h1>
 					<button class="view">View All</button>
-				</div>
+				 </div>
 
-				<div class="report-body">
+				  <div class="report-body">
+					<form action="" method="POST" enctype="multipart/form-data">
+						<label for ="cat_name">category name</label>
+						<input type ="text" name="cat_name" id="cat_name">
+
+						<label for="cat_img">Image</label>
+						<input type="file" id="cat_img" name="cat_img">
+
+						<label for="cat_featured">featured</label>
+						<input type="radio" name="cat_featured" id="cat_featured">
+						ON
+						<input type="radio" name="cat_featured" id="cat_featured">
+						OFF
 					
-					</div>
+						
+                        <label for="cat_status">status</label>
+						<input type="radio" name="cat_status" id="cat_status">
+						ON
+						<input type="radio" name="cat_status" id="cat_status">
+						OFF
+
+						<input type="submit" value="submit">
+
+                   </form>
+
+                  </div>
 				</div>
 			</div>
 		</div>
