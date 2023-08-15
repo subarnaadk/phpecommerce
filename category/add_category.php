@@ -182,29 +182,51 @@ if(!isset($_SESSION['username']))
 				 </div>
 
 				  <div class="report-body">
-					<form action="" method="POST" enctype="multipart/form-data">
-						<label for ="cat_name">category name</label>
-						<input type ="text" name="cat_name" id="cat_name">
-
-						<label for="cat_img">Image</label>
-						<input type="file" id="cat_img" name="cat_img">
-
-						<label for="cat_featured">featured</label>
-						<input type="radio" name="cat_featured" id="cat_featured">
-						ON
-						<input type="radio" name="cat_featured" id="cat_featured">
-						OFF
+				  <form action="upload_category.php" method="POST" enctype="multipart/form-data" >
 					
-						
-                        <label for="cat_status">status</label>
-						<input type="radio" name="cat_status" id="cat_status">
-						ON
-						<input type="radio" name="cat_status" id="cat_status">
-						OFF
+					<label for="cat_name" class="form-label">Category Name</label>
+					<input type="text" name="cat_name" id="cat_name" class="form-control" required>
+					
+					<label for="cat_img" class="form-label">Image</label>
+					<input type="file" id="cat_img" name="cat_img" class="form-control" required>
+					<label for="cat_name" class="form-label">Featured:</label>
 
-						<input type="submit" value="submit">
+					<div class="form-check">	
+					<input type="radio" name="cat_featured" id="cat_featured" class="form-check-input" value='yes' required>
+					<label class="form-check-label" for="flexRadioDefault1">
+						Yes
+					</label>
+					</div>
 
-                   </form>
+					<div class="form-check">
+
+					<input type="radio" name="cat_featured" id="cat_featured" class="form-check-input"  value='no' required>
+					
+					<label class="form-check-label" for="flexRadioDefault1">
+						No
+					</label>
+					</div>
+					
+
+					<label for="cat_name" class="form-label">Status:</label>
+
+					<div class="form-check">
+					<input type="radio" name="cat_status" id="cat_status" class="form-check-input" value='yes'>
+					<label class="form-check-label" for="flexRadioDefault1">
+						Yes
+					</label>
+					</div>
+					<div class="form-check">
+					<input type="radio" name="cat_status" id="cat_status" class="form-check-input" value='no'>
+					<label class="form-check-label" for="flexRadioDefault1">
+						No
+					</label>
+					</div>
+
+
+					<input type="submit" value="submit" class="btn btn-primary">
+
+			</form>
 
                   </div>
 				</div>
